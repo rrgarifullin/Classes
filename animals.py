@@ -23,7 +23,7 @@ class Animals(Creature):
 
 
 class MilkyWay(Animals):
-    def milk(self):
+    def get_milk(self):
         print('Молоко собрано')
 
 
@@ -66,22 +66,22 @@ class Goat(MilkyWay):
 
 animal = {}
 
-goose1 = Goose('Серый', '50', 'серый')
-goose2 = Goose('Белый', '55', 'белый')
-chicken1 = Chicken('Ко-ко', '40')
-chicken2 = Chicken('Кукареку', '45')
-duck1 = Duck('Кряква', '20')
-sheep1 = Sheep('Барашек', '90')
-sheep2 = Sheep('Кудрявый', '95')
-cow1 = Cow('Манька', '160')
-goat1 = Goat('Рога', '70')
-goat2 = Goat('Копыта', '75')
+goose1 = Goose('Серый', 50, 'серый')
+goose2 = Goose('Белый', 55, 'белый')
+chicken1 = Chicken('Ко-ко', 40)
+chicken2 = Chicken('Кукареку', 45)
+duck1 = Duck('Кряква', 20)
+sheep1 = Sheep('Барашек', 90)
+sheep2 = Sheep('Кудрявый', 95)
+cow1 = Cow('Манька', 160)
+goat1 = Goat('Рога', 70)
+goat2 = Goat('Копыта', 75)
 
 goose1.collect_eggs()
 chicken1.collect_eggs()
 sheep1.cut_wool()
-cow1.milk()
-goat1.milk()
+cow1.get_milk()
+goat1.get_milk()
 cow1.feed()
 cow1.sound()
 
